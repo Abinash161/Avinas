@@ -41,11 +41,7 @@ img, video {
 
 
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+
 
 .card {
   flex: 1 1 calc(33.333% - 20px);
@@ -61,7 +57,10 @@ img, video {
 @media (max-width: 480px) {
   .card {
     flex: 1 1 100%;
+  
   }
+  
+  
 }
 
 
@@ -69,10 +68,10 @@ img, video {
 .navbar {
   display: flex;
   justify-content: center;
-  background: #000000;
+  background-color:transparent;
   padding: 10px 20px;
-  position: static;
-  top: 0;
+  position: relative;
+
   z-index: 1000;
   flex-direction: row;
 }
@@ -86,18 +85,18 @@ img, video {
   transition: all 0.3s ease;
 }
 
-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    border: 2px solid;
-    border-radius: 20px 40px;
-    align-items: center;
+    flex-direction: row;
+    position: fixed
+    
+    }
+  .desk_only{
+    display: none ;
+
+    
   }
 }
 
